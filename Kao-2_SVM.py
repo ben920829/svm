@@ -33,9 +33,9 @@ st.dataframe(df.head(50))
 # 2. 側欄條件篩選
 # ===============================
 st.sidebar.header("🔎 資料篩選器")
-age_range = st.sidebar.slider("屋齡範圍", 1, 40, (1, 40))
+age_range = st.sidebar.slider("屋齡範圍", 1, 40, (10, 20))
 room = st.sidebar.selectbox("房間數", ["All", "2", "3"])
-ratio_range = st.sidebar.slider("主建物佔比範圍", 35, 100, (35, 100))
+ratio_range = st.sidebar.slider("主建物佔比範圍", 35, 100, (50, 70))
 
 # 篩選資料
 filtered_df = df[(df["age"] >= age_range[0]) & (df["age"] <= age_range[1]) &
