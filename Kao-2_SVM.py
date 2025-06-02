@@ -16,7 +16,7 @@ from sklearn.preprocessing import MinMaxScaler
 # ===============================
 # 1. 資料載入與基本顯示
 # ===============================
-st.title("房價資料分析")
+st.title("房價資料分析-SVM法")
 
 # 狀態訊息
 st.success('分析環境載入成功 ✅')
